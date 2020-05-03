@@ -1,1 +1,31 @@
 
+<!-- https://any-api.com is a web site where to get Apis -->
+<!-- https://openweathermap.org/api Weather API -->
+
+<!--
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state},{country code}&appid={your api key}
+-->
+<html>
+<head>
+	<title> Weather forecast </title>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="weather.js"></script>
+	
+	
+</head>
+
+<body>
+	<p> Enter the town you would like to have the temperature"</p>
+	<input id="town" type="text" value="Paris,fr"/>
+	</br>
+	</br>
+	<input type="button" value="Call API Weather forecast" onclick="buttonClickGet()"/>
+	<p id="weather_zone"></p>
+</body>
+
+</html>
